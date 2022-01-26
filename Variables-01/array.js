@@ -17,3 +17,4 @@ let b1 = ["A", "B", "C", "D"];
 b2 = b1;
 b1[0] = -99;
 console.log("b2=", b2);
+// let b2 = b1.slice() --> this creates a copy of b1's array, and assign it to b2. Unlike b1=b2.
