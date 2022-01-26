@@ -12,3 +12,8 @@ console.log(food);
 
 let complex = [1, 2, 3, ["A", "B", ["Alpha", "Beta"], "C"]];
 console.log(complex[3][2][0]);
+// arrays are reference value
+let b1 = ["A", "B", "C", "D"];
+b2 = b1;
+b1[0] = -99;
+console.log("b2=", b2);
