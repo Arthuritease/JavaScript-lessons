@@ -1,0 +1,34 @@
+// const prompt = require("prompt-sync")();
+
+// let weight = parseFloat(prompt("enter ur weight: "));
+// let height = parseFloat(prompt("enter your height: "));
+// // self-explaining code below
+// let bmi = weight / height ** 2;
+// console.log("Your BMI is ", bmi);
+
+const prompt = require("prompt-sync")();
+
+function calculateBMI(width, height) {
+  return width / height ** 2;
+}
+
+function getWeight() {
+  let weight = parseFloat(prompt("Please enter your weight: "));
+  return weight;
+}
+
+function getHeight() {
+  let height = parseFloat(prompt("Please enter your height: "));
+  return height;
+}
+
+function printBMI(bmi) {
+  console.log("Your BMI is", bmi);
+}
+
+let weight = getWeight();
+let height = getHeight();
+
+// self-explaining code
+let bmi = calculateBMI(weight, height);
+printBMI(bmi);
