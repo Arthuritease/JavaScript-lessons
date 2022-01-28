@@ -12,10 +12,11 @@ let distanceTravelled = 0;
 
 while (totalAmountLeft >= 3.5) {
   if (distanceTravelled < 10) {
+    totalAmountLeft = totalAmountLeft - 3.5;
     distanceTravelled += 0.5;
   } else {
     distanceTravelled += 0.4;
+    totalAmountLeft = totalAmountLeft - 3.5;
   }
-  totalAmountLeft = totalAmountLeft - 3.5;
+  console.log("distance travelled =", distanceTravelled);
 }
-console.log("distance travelled =", distanceTravelled);
