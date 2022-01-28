@@ -10,3 +10,4 @@ console.log("sliced phrase = ", phrase.slice(3));
 // start slicing at 6(include)
 //end slicing at 12(exclude)
 console.log("Defined slicing phrase = ", phrase.slice(6, 12));
+// slice w/o arguments will return unedited string
