@@ -23,6 +23,7 @@ let student = {
 console.log(student["first name"]);
 
 //unlike Python, JS object can store functions
+//a function in onjects are known as "Methods:"
 let Enterprise = {
   speed: 18,
   calculatedistance: function (time) {
@@ -39,3 +40,15 @@ let destroyer = {
 };
 console.log(Enterprise.calculatedistance(10));
 console.log(destroyer.calculatedistance(10));
+
+//possible to create an empty onject
+let employeeRecord = {
+  firstname: "Tan",
+};
+//you can add a new property into the object
+employeeRecord.lastname = "Ah Kow";
+employeeRecord.getname = function () {
+  return this.firstname + " " + this.lastname;
+};
+
+console.log("Dude's name is -->", employeeRecord.getname());
